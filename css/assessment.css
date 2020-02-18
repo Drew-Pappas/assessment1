@@ -1,0 +1,39 @@
+body {
+    background-image: url("../images/back-ground.jpeg");
+}
+
+main {
+    text-align: center;
+}
+
+#mystuff {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1, img {
+    margin: 0 auto;
+    display: block;
+}
+
+img{
+    width: 120px; 
+    margin-bottom: 15px; 
+}
+
+div{
+    padding: 30px; 
+    margin:5px;     
+}
+
+@media screen and (min-width: 850px){
+    #mystuff {
+        grid-template-columns: auto auto auto;
+    }
+
+    div:nth-child(even){
+        border: 1px solid black;
+    }
+
+    
+}
